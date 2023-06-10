@@ -54,7 +54,7 @@ def get_video_ids_from_playlist(playlistId, video_Ids=None, nextPageToken=''):
 
 def main():
     playlists_ids=['PLTIh4N93lOTZivHW-hnlVtRuuYN1GeNGR']
-    f = open("output.txt", "w")
+    f = open("output.txt", "w", encoding="utf-8")
     for playlist_id in playlists_ids:
         f.write(
             f"# Playlist URL: https://www.youtube.com/playlist?list={playlist_id}")
